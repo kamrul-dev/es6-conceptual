@@ -93,10 +93,22 @@ console.log(second);
 console.log(third); 
 
 // 7. Spread Operator
-
+//==========================================
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 const arr3 = [...arr1, ...arr2];
 
 console.log(arr3);
 console.log(...arr1, ...arr2);
+
+
+// 8. for/of loop
+//===========================================
+const numbers = [1, 2, 3, 4, 45, 64 , 63];
+        // traditional way
+        /* for(let i = 0; i < numbers.length; i++){
+            console.log(numbers[i]);
+        }*/
+for(const number of numbers){
+    console.log(number);
+}
