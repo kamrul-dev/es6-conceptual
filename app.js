@@ -20,7 +20,7 @@ console.log(age) */
 
 
 
-// block scope
+// ==> block scope
 let x = 10
 {
     let x = 2;    // block scope
@@ -32,3 +32,8 @@ console.log('outside block', x);
 
 // 3. const
 //====================================
+// ==> can not reassign/redefine
+    /* const age = 45;
+    age = 56;
+    console.log(age); */
+
