@@ -90,4 +90,12 @@ const myCars = ['Toyota', 'BMW', 'Tata', 'Ford', 'Tesla'];
 const [first, second, third, fourth, fifth] = myCars;  
 console.log(first);   
 console.log(second);   
-console.log(third);   
+console.log(third); 
+
+// 7. Spread Operator
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [...arr1, ...arr2];
+
+console.log(arr3);
