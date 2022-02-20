@@ -38,9 +38,39 @@ console.log('outside block', x);
     console.log(age); */
 
 // 4. Template Literal/string/bactick
+//=====================================
     // ==> used for dynamic value
 let name = 'Kamrul';
 let message = 'How are you?';
 
 let fullMessage = ` hi, ${name}. ${message}. What about your programming course?`;
 console.log(fullMessage);
+
+
+// 5.  Arrow Function
+//=========================================
+    // ==> less code and easy to write code
+    // ==> arrow function does not support hoisting
+
+        // traditional way
+        /* function sum(a , b){
+            const result = a + b;
+            return result;
+        }
+        const total = sum(2, 4);
+        console.log(total); */
+
+// arrow function for single line 
+const sum = (a, b) => a + b;
+const result = sum(12, 10);
+console.log(result);
+
+// arrow function for mutiple line 
+const add = (a, b, c) => {
+    const add1 = a + b;
+    const add2 = a + c;
+    return add2;
+}
+const result1 = add(12, 12, 12);
+console.log(result1);
+
