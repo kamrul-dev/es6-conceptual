@@ -114,7 +114,8 @@ for(const number of numbers){
 }
 
 
-// Default Parameter Values
+// 9. Default Parameter Values
+// ======================================
 function sumTwo(a, b = 10){    // set default value b = 10
     const result2 = a + b;
     return result2;
@@ -127,3 +128,41 @@ function welCome(name = 'Hasan'){ //set default value  name = 'Hasan'
     console.log(message);
 }
 welCome('Kamrul');
+
+// 10. map() , filter(), find
+//====================================
+
+const myArr = [2, 3, 5, 6, 7, 12];
+// let myNewArr = [];
+            /* for(const number of myArr){
+                const tripled = number * 3;
+                myNewArr.push(tripled);
+            }
+            console.log(myNewArr); */
+
+// const tripleArray = myArr.map(number => number * 3);
+// console.log(tripleArray);
+
+const newArr = [1, 2, 3, 4 ,5, 6, 7, 8, 9, 10, 500, 100];
+                /* let filterArr = [];
+                for(number of newArr){
+                    if(number % 2 == 0){
+                        filterArr.push(number);
+                    }
+                }
+               console.log(filterArr); */
+
+// filter () method
+/* const filteredArr = newArr.filter(number => number % 2 != 0);
+console.log(filteredArr); */
+
+
+// find() method
+// it finds the condition satisfied first element, just find the single elelment according to condition
+/* const found = newArr.find(number => number > 10);
+console.log(found); */
+
+const nameArray = ['kamrul', 'hasan', 'fahim'];
+const nameFound = nameArray.find(name => name.length % 2 != 0);
+console.log(nameFound);
+
