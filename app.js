@@ -37,3 +37,10 @@ console.log('outside block', x);
     age = 56;
     console.log(age); */
 
+// 4. Template Literal/string/bactick
+    // ==> used for dynamic value
+let name = 'Kamrul';
+let message = 'How are you?';
+
+let fullMessage = ` hi, ${name}. ${message}. What about your programming course?`;
+console.log(fullMessage);
