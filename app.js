@@ -129,7 +129,7 @@ function welCome(name = 'Hasan'){ //set default value  name = 'Hasan'
 }
 welCome('Kamrul');
 
-// 10. map() , filter(), find
+// 10. map() , filter(), find()
 //====================================
 
 const myArr = [2, 3, 5, 6, 7, 12];
