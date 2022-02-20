@@ -1,10 +1,10 @@
 // 1. what is ES6 and why we should use it?
-    /*
-     ==> ES6 is the updated version of javascript
-     ==> increase readability
-     ==> short code
-    
-    */
+/*
+ ==> ES6 is the updated version of javascript
+ ==> increase readability
+ ==> short code
+ 
+*/
 
 // 2. let
 //===============================
@@ -24,7 +24,7 @@ console.log(age) */
 let x = 10
 {
     let x = 2;    // block scope
-    console.log('inside block' , x);
+    console.log('inside block', x);
 }
 console.log('outside block', x);
 
@@ -33,13 +33,13 @@ console.log('outside block', x);
 // 3. const
 //====================================
 // ==> can not reassign/redefine
-    /* const age = 45;
-    age = 56;
-    console.log(age); */
+/* const age = 45;
+age = 56;
+console.log(age); */
 
 // 4. Template Literal/string/bactick
 //=====================================
-    // ==> used for dynamic value
+// ==> used for dynamic value
 let name = 'Kamrul';
 let message = 'How are you?';
 
@@ -49,16 +49,16 @@ console.log(fullMessage);
 
 // 5.  Arrow Function
 //=========================================
-    // ==> less code and easy to write code
-    // ==> arrow function does not support hoisting
+// ==> less code and easy to write code
+// ==> arrow function does not support hoisting
 
-        // traditional way
-        /* function sum(a , b){
-            const result = a + b;
-            return result;
-        }
-        const total = sum(2, 4);
-        console.log(total); */
+// traditional way
+/* function sum(a , b){
+    const result = a + b;
+    return result;
+}
+const total = sum(2, 4);
+console.log(total); */
 
 // arrow function for single line 
 const sum = (a, b) => a + b;
@@ -74,3 +74,20 @@ const add = (a, b, c) => {
 const result1 = add(12, 12, 12);
 console.log(result1);
 
+
+// 6. Array Destructuring
+//======================================
+
+        // traditional way
+        /*const myCars = ['Toyota', 'BMW', 'Tata', 'Ford', 'Tesla'];
+
+        const firstCar = myCars[0];
+        const secondCar = myCars[1]
+        console.log(firstCar, secondCar); */
+
+const myCars = ['Toyota', 'BMW', 'Tata', 'Ford', 'Tesla'];
+
+const [first, second, third, fourth, fifth] = myCars;  
+console.log(first);   
+console.log(second);   
+console.log(third);   
