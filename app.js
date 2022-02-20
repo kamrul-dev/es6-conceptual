@@ -112,3 +112,18 @@ const numbers = [1, 2, 3, 4, 45, 64 , 63];
 for(const number of numbers){
     console.log(number);
 }
+
+
+// Default Parameter Values
+function sumTwo(a, b = 10){    // set default value b = 10
+    const result2 = a + b;
+    return result2;
+}
+const total2 = sumTwo(10, 20);
+console.log('addTwo: ', total2);
+
+function welCome(name = 'Hasan'){ //set default value  name = 'Hasan'
+    const message = `Hi ${name}, welcome to this programming world!`;
+    console.log(message);
+}
+welCome('Kamrul');
